@@ -1,0 +1,114 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  --dark-blue: hsla(213, 84%, 24%, 1);
+  --dark-blue500: hsla(219, 88%, 17%, 1);
+}
+body, html {
+  width: 100%;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.4rem;
+  font-size: 3rem;
+  gap: 1rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 3rem;
+}
+.menu button {
+  width: 25rem;
+  height: 10rem;
+  border: 1px solid var(--dark-blue);
+  border-radius: 2.4rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.hidden {
+  display: none;
+}
+.newGame {
+  color: white;
+  background-color: var(--dark-blue);
+}
+.newGame:hover {
+  background-color: var(--dark-blue500);
+}
+.newWord {
+  color: var(--dark-blue);
+  background-color: transparent;
+}
+.newWord:hover {
+  color: white;
+  background-color: var(--dark-blue);
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+}
+footer a {
+  font-size: 0px;
+}
+
+/* ======================== MAIN GAME ==========================  */
+.game {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.canvas {
+  border: 1px solid var(--dark-blue);
+  border-radius: 2.4rem;
+  margin-block: 1rem;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+section.hidden {
+  display: none;
+}
+.buttons button {
+  height: 7rem;
+  width: 30rem;
+  border-radius: 2.4rem;
+  border: 1px solid var(--dark-blue);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.newGameIn {
+  color: white;
+  background-color: var(--dark-blue);
+}
+.newGameIn:hover {
+  background-color: var(--dark-blue500);
+}
+.exit {
+  color: var(--dark-blue);
+  background-color: transparent;
+}
+.exit:hover {
+  color: white;
+  background-color: var(--dark-blue);
+}
