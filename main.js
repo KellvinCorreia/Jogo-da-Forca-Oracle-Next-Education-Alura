@@ -14,10 +14,7 @@ let errors = 6
 let saveKeys = [] // Salvar as teclas digitadas pelo usuário
 let regex = /[^a-zA-Z]/g
 
-function clear() {
-  errors = 6
-  saveKeys = []
-}
+
 function playGame() {
   canvas.style.display = 'flex';
   endGame.style.display =  'none';
@@ -35,6 +32,7 @@ function playGame() {
       }
     } else if(errors >= 1) {
       errors--
+      drawingChar(errors)
       writeFailKey(keyPressedUpperCase, errors)
     } else {
       canvas.style.display = 'none';
@@ -72,3 +70,9 @@ exit.addEventListener('click', function () {
   buttons.classList.add('hidden');
   game.classList.add('hidden');
 });
+
+function clear() {
+  errors = 6
+  saveKeys = []
+  drawing.clearRect(0, 0, canvas.width, canvas.height);
+}
