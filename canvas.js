@@ -18,11 +18,27 @@ function drawLines() {
   drawing.lineJoin="round"
   drawing.strokeStyle = "#0A3871"
   drawing.beginPath()
-  let largura=600/wordSort.length
+  let width=600/wordSort.length
   for (let i=0;i<wordSort.length;i++){
-    drawing.moveTo(350+(largura*i),640)
-    drawing.lineTo(300+(largura*i),640)
+    drawing.moveTo(350+(width*i),640)
+    drawing.lineTo(300+(width*i),640)
   }
   drawing.stroke()
   drawing.closePath()
 }
+function writeSecretWord(index) {
+  drawing.font = "bold 5rem Inter"
+  drawing.lineCap = "round"
+  drawing.fillStyle = "#0A3871"
+  drawing.lineWidth = 20
+  let width=600/wordSort.length
+  drawing.fillText(wordSort[index],308+(width * index), 630)
+}
+
+function writeFailKey(index, errors) {
+  drawing.font = "bold 4rem Inter"
+  drawing.lineCap = "round"
+  drawing.fillStyle = "#0A3871"
+  drawing.lineWidth = 10
+  drawing.fillText(index, 200 + (40 * (10 - errors)),700,40)
+} 

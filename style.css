@@ -76,7 +76,6 @@ footer a {
   justify-content: center;
 }
 .canvas {
-  border: 1px solid var(--dark-blue);
   border-radius: 2.4rem;
   margin-block: 1rem;
 }
@@ -111,4 +110,10 @@ section.hidden {
 .exit:hover {
   color: white;
   background-color: var(--dark-blue);
+}
+/* =============== END GAME ================== */
+.endGame {
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
 }
