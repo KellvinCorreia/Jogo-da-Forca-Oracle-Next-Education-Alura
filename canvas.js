@@ -4,7 +4,6 @@ function drawCanvas() {
   drawing.lineJoin = 'round';
   drawing.fillStyle = '#F3F5FC';
   drawing.strokeStyle = '#0A3871';
-  drawing.fillRect(0, 0, 1200, 800);
 
   drawing.beginPath();
   drawing.moveTo(720, 400);
@@ -41,7 +40,7 @@ function drawLines() {
   drawing.closePath();
 }
 function writeSecretWord(index) {
-  drawing.font = 'bold 5rem Inter';
+  drawing.font = 'bold 6rem Inter';
   drawing.lineCap = 'round';
   drawing.fillStyle = '#0A3871';
   drawing.lineWidth = 20;
@@ -50,7 +49,7 @@ function writeSecretWord(index) {
 }
 
 function writeFailKey(index, errors) {
-  drawing.font = 'bold 4rem Inter';
+  drawing.font = 'bold 5rem Inter';
   drawing.lineCap = 'round';
   drawing.fillStyle = '#0A3871';
   drawing.lineWidth = 10;
