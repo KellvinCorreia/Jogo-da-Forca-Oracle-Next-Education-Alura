@@ -7,10 +7,13 @@
   margin: 0;
   --dark-blue: hsla(213, 84%, 24%, 1);
   --dark-blue500: hsla(219, 88%, 17%, 1);
+  --primary-bottom: #9198e5;
 }
 body,
 html {
   width: 100%;
+  height: 97.4vh;
+  background: linear-gradient(#ffffff, var(--primary-bottom));
 }
 .icons {
   display: flex;
@@ -91,7 +94,8 @@ footer a {
 section.hidden {
   display: none;
 }
-.buttons button, .registration button {
+.buttons button,
+.registration button {
   height: 7rem;
   width: 30rem;
   border-radius: 2.4rem;
@@ -99,23 +103,31 @@ section.hidden {
   font-size: 2rem;
   cursor: pointer;
 }
-.newGameIn, .registerButton {
+.newGameIn,
+.registerButton {
   color: white;
   background-color: var(--dark-blue);
 }
-.newGameIn:hover, .registerButton:hover {
+.newGameIn:hover,
+.registerButton:hover {
   background-color: var(--dark-blue500);
 }
-.exit, .exitRegister {
+.exit,
+.exitRegister,
+.clearText {
   color: var(--dark-blue);
   background-color: transparent;
 }
-.exit:hover, .exitRegister:hover {
+.exit:hover,
+.exitRegister:hover,
+.clearText:hover {
   color: white;
   background-color: var(--dark-blue);
 }
 /* =============== END GAME ================== */
-.endGame {
+.endGame,
+.winGame {
+  height: 70vh;
   font-size: 5rem;
   justify-content: center;
   align-items: center;
@@ -131,5 +143,11 @@ section.hidden {
   font-size: 50rem;
 }
 #textArea {
+  border-radius: 2.4rem;
+  box-shadow: 1rem 1rem 2rem black;
   font-size: 2rem;
+  text-indent: 2rem;
+  resize: none;
+  text-align: center;
+  padding-block: 12rem;
 }

@@ -23,15 +23,18 @@
   <main>
     <section class="game hidden">
       <canvas class="canvas" height="800px" width="1200px"></canvas>
+      <div class="winGame hidden">Vitória</div>
       <div class="endGame hidden">Fim de Jogo!</div>
     </section>
     <section class="buttons hidden">
+      
       <button class="newGameIn">Novo jogo</button>
       <button class="exit">Desistir</button>
     </section>
     <section class="registration hidden">
-      <textarea name="textArea" id="textArea" cols="40" rows="15"></textarea>
+      <textarea minlength="3" maxlength="9" name="textArea" id="textArea" cols="40" rows="1"></textarea>
       <button class="registerButton">Cadastrar</button>
+      <button class="clearText">Limpar</button>
       <button class="exitRegister">Cancelar</button>
     </section>
   </main>
