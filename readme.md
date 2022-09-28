@@ -1,6 +1,14 @@
 # Jogo-da-Forca-Oracle-Next-Education-Alura
 
-## Introdução
+## Introdução:
+
+<br/>
+
+- Ao apertar o botão "Novo jogo", será gerado aleatoriamente uma das palavras já cadastradas no sistema, ao acertar todas as letras você ganha.
+
+- Terá um limite de 6 erros.
+
+- É possível cadastrar uma nova palavra.
 
 <br/>
 
@@ -22,7 +30,7 @@
 
 <br/>
 
-Requisitos:  
+Requisitos:
 
 - Funciona apenas com letras maiúsculas
 - Não devem ser utilizados letras com acentos nem caracteres especiais
